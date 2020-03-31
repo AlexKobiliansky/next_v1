@@ -5,15 +5,71 @@
 
 // ≥1200px
 +media-breakpoint-down(lg)
+  .main-mnu
+    a
+      font-size: 16px
+      margin-right: 20px
+
+  .top-address
+    font-size: 18px
+    margin-right: 0
+
+  .top-phones
+    a
+      font-size: 18px
+
+  .soc-item, .messanger-item
+    img
+      width: 20px
 
 // ≥992px
 +media-breakpoint-down(md)
 
+
+
+  .top-socials
+    order: 4
+    width: 50%
+    margin-top: 15px
+  .top-contacts
+    order: 5
+    width: 50%
+    justify-content: flex-end
+    margin-top: 5px
+
+
+
+  .top-line
+    flex-wrap: wrap
+
+  .hamburger-wrap
+    display: block
+
+  .mnu-line
+    display: none
+
 // ≥768px
 +media-breakpoint-down(sm)
+  .top-address
+    font-size: 14px
 
 // ≥480px
 +media-breakpoint-down(xs)
+  .top-address
+    order: 3
+    margin-top: 20px
+    width: 100%
+    margin-bottom: 10px
+  .top-socials
+    width: 90px
+    margin-top: 20px
+
+  .top-contacts
+    width: calc(100% - 90px)
+
+  .top-phones
+    a
+      font-size: 16px
 
 
 /*==========  Mobile First  ==========*/
