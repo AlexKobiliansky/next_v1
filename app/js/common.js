@@ -69,7 +69,7 @@ $(document).ready(function(){
         dots: true,
         animateOut: 'fadeOut',
         animateIn: 'fadeIn',
-        // mouseDrag: false,
+        mouseDrag: false,
         touchDrag: false,
         autoplay: true,
     });
