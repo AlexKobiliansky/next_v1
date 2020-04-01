@@ -5,6 +5,25 @@
 
 // ≥1200px
 +media-breakpoint-down(lg)
+
+  .intro-content
+    padding-left: 370px
+
+  .intro-slider
+    h1
+      font-size: 52px
+
+  .intro-type-item
+    width: auto
+
+  .intro-form
+    width: calc(100% - 30px)
+    margin-left: 0
+    margin-right: 0
+    padding: 30px 70px
+    .phone
+      font-size: 26px
+
   .main-mnu
     a
       font-size: 16px
@@ -25,7 +44,44 @@
 // ≥992px
 +media-breakpoint-down(md)
 
+  .s-intro
+    padding-bottom: 200px
 
+  .intro-form
+    bottom: auto
+    top: calc(100% + 100px)
+    &-body
+      flex-direction: column
+    .phone
+      display: inline-block
+      margin-bottom: 50px
+      font-size: 34px
+      &:after
+        right: calc(50% - 14px)
+        top: auto
+        bottom: -33px
+    label
+      margin-bottom: 50px
+      &:after
+        transform: rotate(90deg)
+        right: calc(50% - 7px)
+        top: auto
+        bottom: -30px
+    input
+      font-size: 18px
+      width: 266px
+
+  .intro-content
+    padding-left: 270px
+
+  .intro-slider
+    height: 160px
+    margin-top: 80px
+    h1
+      font-size: 36px
+
+  .intro-types
+    display: none
 
   .top-socials
     order: 4
@@ -50,11 +106,53 @@
 
 // ≥768px
 +media-breakpoint-down(sm)
+
+  .intro-content
+    padding-left: 180px
+
+  .intro-slider
+    h1
+      font-size: 28px
+
+  .intro-numbers
+    font-size: 16px
+    right: 2px!important
+
   .top-address
     font-size: 14px
 
 // ≥480px
 +media-breakpoint-down(xs)
+
+
+  .intro-content
+    padding-left: 110px
+    padding-right: 25px
+
+  .intro-slider
+    height: 120px
+    margin-top: 40px
+    h1
+      font-size: 24px
+    .owl-dots
+      right: -16px
+
+  .intro-form
+    padding: 30px 40px
+    top: calc(100% + 88px)
+    &-title
+      font-size: 18px
+      margin-bottom: 5px
+    &-subtitle
+      font-size: 20px
+    .phone
+      font-size: 28px
+    label
+      margin-bottom: 15px
+      &:after
+        display: none
+
+
   .top-address
     order: 3
     margin-top: 20px
@@ -70,6 +168,10 @@
   .top-phones
     a
       font-size: 16px
+
+@media (max-width: 390px)
+  .intro-content
+    padding-left: 50px
 
 
 /*==========  Mobile First  ==========*/
