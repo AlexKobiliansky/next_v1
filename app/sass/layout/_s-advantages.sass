@@ -1,0 +1,42 @@
+.s-advantages
+  padding-top: 180px
+  padding-bottom: 20px
+  .section-title
+    margin-bottom: 50px
+
+
+.adv-item
+  text-align: center
+  padding: 0 12px
+  margin-bottom: 30px
+  position: relative
+  &:after
+    content: ''
+    position: absolute
+    width: 7px
+    height: 7px
+    border-radius: 50%
+    background-color: #dcdcdc
+    top: 31px
+    right: -19px
+    box-shadow: -11px 0 0 #dcdcdc, 11px 0 0 #dcdcdc
+  &-img
+    margin-bottom: 10px
+  .svg
+    height: 70px
+    width: auto
+    fill: $accent-green
+  &-title
+    font-size: 21px
+    font-weight: 700
+    border-bottom: 1px solid #d0d0d0
+    padding-bottom: 12px
+    line-height: 1.2
+  &-desc
+    line-height: 1.2
+    padding-top: 12px
+  &-col
+    &:last-child
+      .adv-item
+        &:after
+          display: none

@@ -114,6 +114,19 @@ $(document).ready(function(){
     });
 
 
+    function heightses() {
+        if ($(window).width()>480) {
+            $('.adv-item-title').height('auto').equalHeights();
+        }
+    }
+
+    $(window).resize(function() {
+        heightses();
+    });
+
+    heightses();
+
+
 
 
 

@@ -6,6 +6,13 @@
 // ≥1200px
 +media-breakpoint-down(lg)
 
+  .s-advantages
+    padding-top: 150px
+
+  .adv-item
+    &-title
+      font-size: 18px
+
   .intro-content
     padding-left: 370px
 
@@ -43,6 +50,21 @@
 
 // ≥992px
 +media-breakpoint-down(md)
+
+  .s-advantages
+    padding-top: 340px
+
+  .section-title
+    font-size: 32px
+
+  .adv-item
+    &-title
+      font-size: 22px
+    &-col
+      &:nth-child(2)
+        .adv-item
+          &:after
+            display: none
 
   .s-intro
     padding-bottom: 200px
@@ -124,6 +146,28 @@
 // ≥480px
 +media-breakpoint-down(xs)
 
+  .adv-item
+    padding: 0 50px
+    margin-bottom: 60px
+    &:after
+      display: block!important
+      right: calc(50% - 3.5px)
+      bottom: -32px
+      top: auto
+    &-col
+      &:last-child
+        .adv-item
+          &:after
+            display: none!important
+
+  .s-advantages
+    padding-top: 260px
+    padding-bottom: 0
+    .section-title
+      margin-bottom: 30px
+
+  .section-title
+    font-size: 24px
 
   .intro-content
     padding-left: 110px
@@ -160,7 +204,7 @@
     margin-bottom: 10px
   .top-socials
     width: 90px
-    margin-top: 20px
+    margin-top: 21px
 
   .top-contacts
     width: calc(100% - 90px)
@@ -170,6 +214,18 @@
       font-size: 16px
 
 @media (max-width: 390px)
+
+  .messanger-item, .soc-item
+    margin: 0 3px
+    img
+      width: 18px
+
+  .top-messangers
+    margin-right: 5px
+
+  .adv-item
+    padding: 0 25px
+
   .intro-content
     padding-left: 50px
 
