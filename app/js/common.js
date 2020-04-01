@@ -118,6 +118,8 @@ $(document).ready(function(){
         if ($(window).width()>480) {
             $('.adv-item-title').height('auto').equalHeights();
         }
+
+        $('.pop-item-title').height('auto').equalHeights();
     }
 
     $(window).resize(function() {

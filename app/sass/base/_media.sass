@@ -6,6 +6,9 @@
 // ≥1200px
 +media-breakpoint-down(lg)
 
+  .s-populars
+    padding-bottom: 50px
+
   .type-item
     height: 170px
     &-title
@@ -60,6 +63,23 @@
 
 // ≥992px
 +media-breakpoint-down(md)
+
+  .pop-item
+    width: calc(33.33333% - 18px)
+    margin-right: 27px
+    margin-bottom: 27px
+    &:nth-child(4n)
+      margin-right: 27px
+    &:nth-child(3n)
+      margin-right: 0
+    &-title
+      font-size: 18px
+    &-link
+      margin-bottom: 30px
+      font-size: 14px
+      width: 155px
+    &-desc
+      font-size: 16px
 
   .s-types
     padding-bottom: 40px
@@ -150,6 +170,18 @@
 // ≥768px
 +media-breakpoint-down(sm)
 
+  .populars-wrap
+    justify-content: space-between
+
+  .pop-item
+    width: calc(50% - 15px)
+    margin-bottom: 30px
+    margin-right: 0
+    &:nth-child(4n)
+      margin-right: 0
+    &-link
+      margin-bottom: 50px
+
   .intro-content
     padding-left: 180px
 
@@ -166,6 +198,28 @@
 
 // ≥480px
 +media-breakpoint-down(xs)
+
+  .s-populars
+    padding-top: 50px
+    padding-bottom: 30px
+
+  .pop-item
+    height: 200px
+    width: calc(50% - 10px)
+    margin-bottom: 20px
+    &-link
+      margin-bottom: 20px
+      margin-top: 20px
+    &-title
+      font-size: 16px
+    &-desc
+      font-size: 16px
+    &-link
+      width: 140px
+      padding: 10px
+    &.more
+      a
+        font-size: 18px
 
   .section-subtitle
     font-size: 16px
@@ -248,6 +302,33 @@
 
 @media (max-width: 390px)
 
+  .pop-item
+    width: 100%
+    height: 220px
+    display: none
+    &-title
+      font-size: 18px
+    &-desc
+      font-size: 18px
+    &-link
+      font-size: 17px
+      width: 170px
+      margin-bottom: 35px
+      margin-top: 30px
+    &:nth-child(1), &:nth-child(2),&:nth-child(3),&:nth-child(4),&:nth-child(5)
+      display: block
+    &.more
+      display: block
+      height: auto
+      background-color: transparent
+      text-align: center
+      a
+        font-size: 21px
+        color: $accent-green
+        text-decoration: underline
+        &:hover, &:focus, &:active
+          color: $accent-green
+          text-decoration: none
   .type-item
     width: calc(50% - 5px)
     margin-bottom: 10px
