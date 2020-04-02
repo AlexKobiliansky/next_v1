@@ -6,6 +6,25 @@
 // ≥1200px
 +media-breakpoint-down(lg)
 
+  .s-prices
+    padding-bottom: 80px
+
+  .price-item
+    margin-bottom: 30px
+    padding-top: 20px
+    padding-left: 20px
+    padding-right: 20px
+    &-content
+      padding-left: 30px
+      padding-right: 30px
+    &-price
+      width: calc(100% + 102px)
+      left: -51px
+      &:before
+        left: 20px
+      &:after
+        right: 20px
+
   .s-populars
     padding-bottom: 50px
 
@@ -170,6 +189,25 @@
 // ≥768px
 +media-breakpoint-down(sm)
 
+  .s-prices
+    padding-bottom: 20px
+
+  .price-item
+    margin-left: 50px
+    margin-right: 50px
+    padding-top: 15px
+    padding-left: 15px
+    padding-right: 15px
+    &-title
+      margin-bottom: 15px
+    &-price
+      font-size: 26px
+      padding-top: 10px
+      padding-bottom: 10px
+      margin-bottom: 15px
+    &-include
+      margin-bottom: 0
+
   .populars-wrap
     justify-content: space-between
 
@@ -198,6 +236,17 @@
 
 // ≥480px
 +media-breakpoint-down(xs)
+
+  .s-prices
+    padding-top: 50px
+    .section-subtitle
+      margin-bottom: 40px
+
+  .price-item
+    margin-left: 25px
+    margin-right: 25px
+    &:hover
+      transform: none
 
   .s-populars
     padding-top: 50px
@@ -301,6 +350,10 @@
       font-size: 16px
 
 @media (max-width: 390px)
+
+  .price-item
+    margin-left: 0
+    margin-right: 0
 
   .pop-item
     width: 100%

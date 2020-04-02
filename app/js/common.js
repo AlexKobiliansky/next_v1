@@ -117,6 +117,10 @@ $(document).ready(function(){
     function heightses() {
         if ($(window).width()>480) {
             $('.adv-item-title').height('auto').equalHeights();
+            $('.price-item-title').height('auto').equalHeights();
+            $('.price-item-desc').height('auto').equalHeights();
+            $('.price-item-price').height('auto').equalHeights();
+            $('.price-item-include').height('auto').equalHeights();
         }
 
         $('.pop-item-title').height('auto').equalHeights();
