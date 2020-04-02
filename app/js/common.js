@@ -81,6 +81,64 @@ $(document).ready(function(){
         $info.text('0'+currentItem);
     });
 
+    $('.gallery-slider').on('initialized.owl.carousel', function (e) {
+        var firstSlide = $('.cases-slider .owl-item.active');
+
+        var currentSlideIndex = e.item.index + 1;
+        var lastSlideIndex = e.item.index + 6;
+        var currentSlide = $(".gallery-slider .owl-item:nth-child("+currentSlideIndex+")");
+        var lastSlide = $(".gallery-slider .owl-item:nth-child("+lastSlideIndex+")");
+        currentSlide.addClass('explice');
+        lastSlide.addClass('explice');
+    });
+
+    $('.gallery-slider').owlCarousel({
+        loop:true,
+        nav: true,
+        margin: 15,
+        dots: false,
+        // autoplay: true,
+        navText: ["", ""],
+        responsive:{
+            0:{
+                items:1,
+                autoHeight: true,
+            },
+            480: {
+                items: 2,
+                autoHeight: false
+            },
+            768: {
+                items: 3,
+                margin: 20
+            },
+            992: {
+                items: 3,
+                margin: 20
+            },
+            1200: {
+                items: 6,
+                margin: 30
+            }
+        }
+    });
+
+    $('.gallery-slider').on('changed.owl.carousel', function (e) {
+        $('.gallery-slider .owl-item').removeClass('explice');
+        var currentSlideIndex = e.item.index + 1;
+        var lastSlideIndex = e.item.index + 6;
+        var currentSlide = $(".gallery-slider .owl-item:nth-child("+currentSlideIndex+")");
+        var lastSlide = $(".gallery-slider .owl-item:nth-child("+lastSlideIndex+")");
+
+        currentSlide.addClass('explice');
+        lastSlide.addClass('explice');
+    });
+
+    $('.gal-slide').photoswipe({
+        showAnimationDuration: 0,
+        hideAnimationDuration: 0
+    });
+
     $('img.svg').each(function(){
         var $img = jQuery(this);
         var imgID = $img.attr('id');
@@ -121,6 +179,8 @@ $(document).ready(function(){
             $('.price-item-desc').height('auto').equalHeights();
             $('.price-item-price').height('auto').equalHeights();
             $('.price-item-include').height('auto').equalHeights();
+            $('.gal-slide-title').height('auto').equalHeights();
+            $('.gal-slide-desc').height('auto').equalHeights();
         }
 
         $('.pop-item-title').height('auto').equalHeights();

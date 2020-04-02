@@ -6,6 +6,18 @@
 // ≥1200px
 +media-breakpoint-down(lg)
 
+  .gallery-slider
+    left: 0
+    width: calc(100% - 40px)
+    margin-left: 20px
+    margin-right: 20px
+    .owl-nav
+      width: calc(100% + 60px)
+      left: -30px
+    .owl-item
+      &.explice
+        opacity: 1
+
   .s-prices
     padding-bottom: 80px
 
@@ -82,6 +94,12 @@
 
 // ≥992px
 +media-breakpoint-down(md)
+
+  .s-gallery
+    .btn-wrap
+      .btn
+        font-size: 18px
+        width: auto
 
   .pop-item
     width: calc(33.33333% - 18px)
@@ -237,6 +255,19 @@
 // ≥480px
 +media-breakpoint-down(xs)
 
+  .s-gallery
+    padding-top: 50px
+    .btn-wrap
+      .btn
+        font-size: 16px
+
+  .gallery-slider
+    margin-bottom: 25px
+
+  .gal-slide
+    &-img
+      height: 240px
+
   .s-prices
     padding-top: 50px
     .section-subtitle
@@ -350,6 +381,14 @@
       font-size: 16px
 
 @media (max-width: 390px)
+
+  .gal-slide
+    &-img
+      height: 200px
+    &-title
+      font-size: 18px
+    &-desc
+      font-size: 15px
 
   .price-item
     margin-left: 0
