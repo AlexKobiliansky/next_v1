@@ -6,6 +6,17 @@
 // ≥1200px
 +media-breakpoint-down(lg)
 
+  .s-count
+    .section-title
+      font-size: 28px
+
+  .count-spec
+    width: 300px
+    padding: 0 25px
+
+  .count-content
+    width: calc(100% - 300px)
+
   .gallery-slider
     left: 0
     width: calc(100% - 40px)
@@ -94,6 +105,16 @@
 
 // ≥992px
 +media-breakpoint-down(md)
+
+  .count-spec
+    width: 250px
+    &-img
+      width: 160px
+      height: 160px
+
+
+  .count-content
+    width: calc(100% - 250px)
 
   .s-gallery
     .btn-wrap
@@ -207,6 +228,12 @@
 // ≥768px
 +media-breakpoint-down(sm)
 
+  .count-spec
+    display: none
+
+  .count-content
+    width: 100%
+
   .s-prices
     padding-bottom: 20px
 
@@ -254,6 +281,19 @@
 
 // ≥480px
 +media-breakpoint-down(xs)
+
+  .s-count
+    padding: 50px 0
+    .section-title
+      font-size: 24px
+
+  .count-form
+    width: 100%
+    .btn
+      width: 100%
+    label
+      span
+        font-size: 16px
 
   .s-text
     h3, h4, h5, h6
@@ -387,6 +427,16 @@
       font-size: 16px
 
 @media (max-width: 390px)
+
+  .s-count
+    .section-title
+      font-size: 20px
+
+  .count-form
+    .btn
+      padding-left: 15px
+      padding-right: 15px
+      font-size: 18px
 
   .s-text
     h3

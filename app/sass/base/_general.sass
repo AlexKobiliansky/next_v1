@@ -102,7 +102,9 @@ form
   label
     display: block
     margin-bottom: 22px
-  input
+    &.short-label
+      width: 220px
+  input, textarea
     width: 100%
     line-height: 1
     border: 1px solid #c4c4c4
@@ -117,6 +119,8 @@ form
         color: red!important
   .help-block
     display: none
+  textarea
+    height: 70px
 
 .section-title
   font-size: 40px
