@@ -120,6 +120,26 @@
 // ≥992px
 +media-breakpoint-down(md)
 
+  .s-page-meta
+    padding-top: 25px
+
+  .page-title
+    font-size: 48px
+  .page-desc
+    font-size: 16px
+    margin-bottom: 15px
+
+  .s-features
+    padding: 50px 0
+
+  .feature-item
+    padding: 0 10px
+    .svg
+      height: 55px
+    &-title
+      font-size: 14px
+
+
   .s-contacts
     .contacts-block
       position: relative
@@ -262,6 +282,20 @@
 // ≥768px
 +media-breakpoint-down(sm)
 
+  .page-title
+    font-size: 40px
+
+  .s-features
+    padding-bottom: 20px
+
+  .features-wrap
+    flex-wrap: wrap
+    justify-content: center
+  .feature-item
+    padding: 0 15px
+    width: 33.333333%
+    margin-bottom: 30px
+
   .main-foot
     .hamburger
       display: block
@@ -322,6 +356,18 @@
 
 // ≥480px
 +media-breakpoint-down(xs)
+
+  .page-title
+    font-size: 32px
+
+
+  .features-wrap
+    justify-content: space-between
+
+  .feature-item
+    padding: 0 10px
+    width: calc(50% - 10px)
+    margin-bottom: 20px
 
   .s-contacts
     .contacts-block
@@ -487,6 +533,15 @@
       font-size: 16px
 
 @media (max-width: 390px)
+
+  .page-title
+    font-size: 26px
+  .page-desc
+    font-size: 14px
+    line-height: 1.25
+
+  .feature-item
+    //width: 100%
 
   .s-contacts
     .contacts-block
