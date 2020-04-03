@@ -6,6 +6,9 @@
 // ≥1200px
 +media-breakpoint-down(lg)
 
+  .stage-item-title
+    font-size: 22px
+
   .main-foot
     padding: 40px 0
 
@@ -119,6 +122,20 @@
 
 // ≥992px
 +media-breakpoint-down(md)
+
+  .stage-item
+    margin-bottom: 25px
+    &-img
+      margin-bottom: 15px
+      &:after
+        font-size: 80px
+        left: -5px
+        bottom: -11px
+    &-title
+      font-size: 20px
+      margin-bottom: 15px
+    &-desc
+      font-size: 16px
 
   .s-page-meta
     padding-top: 25px
@@ -533,6 +550,20 @@
       font-size: 16px
 
 @media (max-width: 390px)
+
+  .stage-item
+    &-img
+      height: 160px
+      &:before
+        background-image: linear-gradient(-135deg, #000 0, transparent 40%)
+      &:after
+        font-size: 60px
+        bottom: -8px
+        left: -4px
+    &-title
+      font-size: 18px
+    &-desc
+      font-size: 14px
 
   .page-title
     font-size: 26px
