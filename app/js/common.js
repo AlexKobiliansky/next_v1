@@ -27,7 +27,7 @@ $(document).ready(function(){
         },
     });
 
-    var mmenuBtn = $("#mmenu-btn");
+    var mmenuBtn = $(".mmenu-btn");
     var API = $mmenu.data("mmenu");
 
     mmenuBtn.click(function() {
@@ -68,7 +68,7 @@ $(document).ready(function(){
         margin: 15,
         dots: true,
         animateOut: 'fadeOut',
-        animateIn: 'fadeIn',
+        // animateIn: 'fadeIn',
         mouseDrag: false,
         touchDrag: false,
         autoplay: true,
@@ -191,6 +191,8 @@ $(document).ready(function(){
     });
 
     heightses();
+
+    $('.preloader').fadeOut();
 
 
 
