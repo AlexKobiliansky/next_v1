@@ -6,6 +6,14 @@
 // ≥1200px
 +media-breakpoint-down(lg)
 
+  .register-form
+    width: 645px
+    h2
+      font-size: 28px
+    h3
+      font-size: 24px
+
+
   .stage-item-title
     font-size: 22px
 
@@ -122,6 +130,17 @@
 
 // ≥992px
 +media-breakpoint-down(md)
+
+  .s-register-form
+    background-color: #f3f3f4
+
+  .register-form
+    width: 100%
+    h2, h3
+      text-align: center
+
+  .register-form-img-wrap
+    display: none
 
   .stage-item
     margin-bottom: 25px
@@ -299,6 +318,20 @@
 // ≥768px
 +media-breakpoint-down(sm)
 
+  .register-form
+    h2
+      font-size: 22px
+    h3
+      font-size: 18px
+    .btn
+      width: auto
+      font-size: 16px
+      padding: 12px 20px
+    label
+      width: calc((100% - 170px)/ 2)
+      span
+        font-size: 16px
+
   .page-title
     font-size: 40px
 
@@ -373,6 +406,21 @@
 
 // ≥480px
 +media-breakpoint-down(xs)
+
+  .register-form
+    padding: 40px 0
+    h2, h3
+      line-height: 1.2
+    .form-labels-wrap
+      flex-direction: column
+    label
+      width: 100%
+      margin-bottom: 15px
+    .btn
+      width: 100%
+      font-size: 18px
+      padding: 15px
+      margin-top: 10px
 
   .page-title
     font-size: 32px
@@ -550,6 +598,12 @@
       font-size: 16px
 
 @media (max-width: 390px)
+
+  .register-form
+    h2
+      font-size: 20px
+    h3
+      font-size: 16px
 
   .stage-item
     &-img
