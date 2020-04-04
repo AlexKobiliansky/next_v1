@@ -194,14 +194,20 @@ $(document).ready(function(){
 
     $('.preloader').fadeOut();
 
-
-
-
-
-
-
-
     /** START FORMS */
+    $(function() {
+        $("a[href='#service-popup-form']").magnificPopup({
+            type: "inline",
+            fixedContentPos: true,
+            fixedBgPos: false,
+            overflowY: "auto",
+            preloader: !1,
+            midClick: !0,
+            removalDelay: 300,
+            mainClass: "my-mfp-zoom-in",
+        })
+    });
+
     var uPhone = $('.user-phone');
     uPhone.mask("8 999 999 99 99",{autoclear: false});
 
