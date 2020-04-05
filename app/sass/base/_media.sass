@@ -6,6 +6,12 @@
 // ≥1200px
 +media-breakpoint-down(lg)
 
+  .portfolio-item
+    margin-bottom: 50px
+
+  .portfolio-wrap
+    margin-bottom: 0
+
   .package-head
     &-info
       width: 470px
@@ -142,6 +148,29 @@
 
 // ≥992px
 +media-breakpoint-down(md)
+
+  .portfolio-wrap
+    margin-top: 50px
+
+  .portfolio-slide
+    height: 260px
+
+  .portfolio-nav
+    height: 70px
+
+  .portfolio-item
+    &-title
+      font-size: 16px
+    &-desc
+      font-size: 14px
+
+  .number-item
+    padding: 0 15px
+    width: 33.333%
+    &-number
+      font-size: 110px
+    &-title
+      font-size: 16px
 
   .s-terms
     padding-top: 40px
@@ -417,6 +446,21 @@
 // ≥768px
 +media-breakpoint-down(sm)
 
+  .portfolio-item
+    width: 100%
+
+  .portfolio-slide
+    height: 340px
+
+  .portfolio-nav
+    height: 100px
+
+  .number-item
+    &-number
+      font-size: 70px
+    &-title
+      font-size: 14px
+
   .term-item
     margin-bottom: 30px
     .svg
@@ -543,7 +587,35 @@
 // ≥480px
 +media-breakpoint-down(xs)
 
+  .s-portfolio
+    padding-bottom: 50px
+    .btn-wrap
+      .btn
+        font-size: 18px
+        width: 240px
 
+
+  .portfolio-slide
+    height: 260px
+
+  .portfolio-nav
+    height: 70px
+
+  .numbers
+    flex-wrap: wrap
+    position: relative
+    width: calc(100% + 30px)
+    left: -15px
+
+  .number-item
+    width: 100%
+    margin-bottom: 20px
+    &-number
+      font-size: 90px
+    &-title
+      font-size: 16px
+    &:last-child
+      margin-bottom: 0
 
   .s-terms
     margin-bottom: -40px
@@ -952,6 +1024,12 @@
       font-size: 16px
 
 @media (max-width: 390px)
+
+  .portfolio-slide
+    height: 240px
+
+  .portfolio-nav
+    height: 60px
 
   .package-gal
     &-img

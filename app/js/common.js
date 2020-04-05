@@ -144,6 +144,26 @@ $(document).ready(function(){
         hideAnimationDuration: 0
     });
 
+    $('.portfolio-slider').owlCarousel({
+        loop:false,
+        nav:true,
+        autoHeight: true,
+        items: 1,
+        thumbs: true,
+        dots: false,
+        thumbsPrerendered: true,
+        thumbItemClass: 'portfolio-nav',
+        animateIn: "fadeIn",
+        animateOut: "fadeOut",
+        mouseDrag: false,
+        navText: ['', '']
+    });
+
+    $('.portfolio-slider').photoswipe({
+        showAnimationDuration: 0,
+        hideAnimationDuration: 0
+    });
+
     $('img.svg').each(function(){
         var $img = jQuery(this);
         var imgID = $img.attr('id');
