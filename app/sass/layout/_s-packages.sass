@@ -1,0 +1,185 @@
+.package-item
+  margin-bottom: 20px
+  +mt(.3s)
+  .container
+    position: relative
+  &-head
+    background-color: $accent-green
+    color: #fff
+    line-height: 1.2
+    padding: 25px 0
+    position: relative
+    margin-bottom: 7px
+    .container
+      display: flex
+      justify-content: flex-start
+      align-items: center
+      padding-right: 120px
+  &-title
+    font-size: 30px
+    text-transform: uppercase
+    font-weight: 700
+  &-desc
+    font-size: 18px
+    color: rgba(#000, .72)
+  &-link
+    position: absolute
+    font-size: 18px
+    padding-right: 24px
+    right: 0
+    top: calc(50% - 10px)
+    cursor: pointer
+    &:after
+      position: absolute
+      content: ''
+      width: 14px
+      height: 14px
+      +bg-cover
+      background-image: url('../img/icons/package-arrow.svg')
+      right: 0
+      top: calc(50% - 5px)
+  &-line
+    height: 10px
+    background-color: $accent-green
+  &-body
+    padding-top: 35px
+    display: none
+  &-include
+    span
+      font-size: 21px
+      margin-bottom: 20px
+      display: inline-block
+    ul
+      font-size: 18px
+      line-height: 1.2
+      margin-bottom: 40px
+      li
+        margin-bottom: 20px
+        position: relative
+        padding-left: 46px
+        &:before
+          content: ''
+          position: absolute
+          width: 30px
+          height: 30px
+          background-image: url('../img/icons/package-li-icon.png')
+          +bg-cover
+          left: 0
+          top: -5px
+  &-formline
+    display: flex
+    justify-content: flex-start
+    align-items: flex-end
+    padding-bottom: 47px
+    border-bottom: 2px solid #dcdcdc
+  &-price
+    width: 410px
+    border-radius: 5px
+    background-color: $accent-green
+    color: #fff
+    text-align: center
+    line-height: 1.2
+    padding: 15px
+    margin-right: 75px
+    .price
+      font-size: 24px
+      font-weight: 700
+      margin-bottom: 8px
+    .notice
+      font-size: 18px
+  &.active
+    box-shadow: 0 10px 5px rgba(#000, .1)
+    .package-item-link
+      &:after
+        background-image: url('../img/icons/close-btn.png')
+    .package-head-price
+      display: none
+
+.package-head-info
+  width: 555px
+  margin-right: 30px
+
+.package-head-price
+  width: calc(100% - 700px)
+  line-height: 1
+  span
+    font-size: 18px
+  .price
+    font-size: 32px
+    font-weight: 700
+
+.package-form
+  width: 495px
+  .form-labels-wrap
+    display: flex
+    justify-content: space-between
+    align-items: flex-end
+    margin-bottom: 10px
+    label
+      width: 200px
+      margin-bottom: 0
+    .btn
+      width: 224px
+  .form-notice
+    font-size: 14px
+    color: rgba(#000, .3)
+
+.package-spec
+  display: flex
+  align-items: center
+  justify-content: space-between
+  padding: 30px 0 60px
+  border-bottom: 2px solid #dcdcdc
+  &-info
+    width: 165px
+    text-align: center
+    line-height: 1
+  &-img
+    width: 140px
+    height: 140px
+    border-radius: 50%
+    +bg-cover
+    margin: 0 auto 17px
+  &-name
+    font-size: 18px
+    font-weight: 700
+    margin-bottom: 5px
+  &-post
+    font-size: 14px
+  &-content
+    width: calc(100% - 195px)
+    font-size: 18px
+    line-height: 1.5
+    color: rgba(#000, .79)
+
+.package-gallery
+  padding: 15px 0 30px
+  &-title
+    text-align: center
+    font-size: 16px
+    color: rgba(#000, .69)
+    margin-bottom: 30px
+
+.package-gal
+  &-img
+    border-radius: 5px
+    overflow: hidden
+    height: 210px
+    margin-bottom: 12px
+    img
+      width: 100%
+      height: 100%
+      object-fit: cover
+  &-price
+    line-height: 1
+    font-size: 21px
+    font-weight: 700
+    color: $accent-green
+    text-align: center
+    margin-bottom: 12px
+  &-title
+    font-size: 16px
+    text-align: center
+    line-height: 1.35
+
+

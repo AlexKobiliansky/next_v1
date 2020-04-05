@@ -6,6 +6,14 @@
 // ≥1200px
 +media-breakpoint-down(lg)
 
+  .package-head
+    &-info
+      width: 470px
+    &-price
+      width: calc(100% - 500px)
+      .price
+        font-size: 28px
+
   .simple-form
     padding-left: 50px
     padding-right: 50px
@@ -134,6 +142,44 @@
 
 // ≥992px
 +media-breakpoint-down(md)
+
+  .package-head
+    &-info
+      width: 350px
+    &-price
+      width: calc(100% - 380px)
+      .price
+        font-size: 20px
+
+  .package-item
+    &-title
+      font-size: 26px
+    &-desc
+      font-size: 14px
+    &-link
+      font-size: 16px
+      &:after
+        width: 12px
+        height: 12px
+        top: calc(50% - 6px)
+    &-formline
+      flex-wrap: wrap
+    &-price
+      margin-right: 0
+      margin-bottom: 15px
+      width: 450px
+
+  .package-spec-content
+    font-size: 16px
+
+  .package-gal
+    margin-bottom: 30px
+
+  .package-gallery
+    padding-bottom: 0
+
+  .package-form
+    width: 450px
 
   .service-popup-form
     .middle
@@ -363,6 +409,18 @@
 // ≥768px
 +media-breakpoint-down(sm)
 
+  .package-item-head
+    .container
+      flex-wrap: wrap
+
+  .package-head-info
+    width: 100%
+    margin-right: 0
+  .package-head-price
+    display: none
+    width: 100%
+    margin-top: 10px
+
   .simple-form
     .form-labels-wrap
       flex-direction: column
@@ -461,6 +519,85 @@
 
 // ≥480px
 +media-breakpoint-down(xs)
+
+  .package-item
+    &-title
+      font-size: 20px
+    &-desc
+      font-size: 12px
+    &-body
+      padding-top: 25px
+    &-include
+      span
+        font-size: 18px
+        margin-bottom: 12px
+      ul
+        font-size: 16px
+        margin-bottom: 30px
+        li
+          padding-left: 30px
+          margin-bottom: 12px
+          &:before
+            width: 20px
+            height: 20px
+            top: -1px
+    &-price
+      .price
+        font-size: 18px
+        margin-bottom: 3px
+      .notice
+        font-size: 14px
+    &-formline
+      padding-bottom: 30px
+
+  .package-spec
+    flex-direction: column
+    padding-bottom: 30px
+    &-info
+      width: 100%
+      margin-bottom: 20px
+    &-content
+      width: 100%
+      font-size: 14px
+      text-align: center
+      line-height: 1.4
+
+  .package-gallery-title
+    line-height: 1.2
+
+  .package-gal
+    &-img
+      height: 240px
+    &-price
+      margin-bottom: 5px
+
+  .package-form
+    .form-labels-wrap
+      flex-wrap: wrap
+      margin-bottom: 5px
+      label
+        width: 100%
+        margin-bottom: 15px
+      .btn
+        width: 100%
+        font-size: 16px
+    .form-notice
+      line-height: 1.2
+
+
+  .package-item-head
+    .container
+      padding-right: 110px
+
+  .package-item-link
+    right: 15px
+    font-size: 14px
+    top: calc(50% - 8px)
+    padding-right: 18px
+    &:after
+      width: 10px
+      height: 10px
+      top: calc(50% - 3px)
 
   .consult-popup-form
     .head
@@ -785,6 +922,9 @@
 
 @media (max-width: 390px)
 
+  .package-gal
+    &-img
+      height: 180px
 
 
   .service-popup-form, .consult-popup-form
