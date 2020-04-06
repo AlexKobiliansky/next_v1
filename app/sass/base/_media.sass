@@ -20,6 +20,12 @@
 // ≥1200px
 +media-breakpoint-down(lg)
 
+  .docs-form
+    .form-labels-wrap
+      width: 600px
+    .btn
+      width: 290px
+
   .doc-item
     &-img
       height: 200px
@@ -206,6 +212,18 @@
 
 // ≥992px
 +media-breakpoint-down(md)
+
+  .s-docs-form
+    background-image: none
+    .section-title
+      width: 100%
+
+  .docs-form
+    display: block
+    .short-label
+      display: block
+    .form-labels-wrap
+      width: 100%
 
   .doc-item
     margin-bottom: 30px
@@ -1216,9 +1234,20 @@
 
 @media (max-width: 390px)
 
+  .s-docs-form
+    .section-title
+      text-align: center
+
+  .docs-form
+    .short-label
+      width: 100%
+    .btn
+      width: 100%
+      font-size: 16px
+
   .doc-item
     &-img
-      height: 160px
+      height: 200px
     &-title
       font-size: 18px
 

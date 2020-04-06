@@ -10,13 +10,20 @@
     content: '1'
     position: absolute
     left: 0
-    top: -40px
+    top: -35px
     width: 100%
     text-align: center
     font-size: 190px
     font-weight: 700
     color: rgba($accent-green, .3)
     line-height: 1
+  &.docs-second
+    margin: 25px 0
+    &:before
+      content: '2'
+  &.docs-third
+    &:before
+      content: '3'
 
 .doc-item
   text-align: center
@@ -26,7 +33,7 @@
     border-radius: 5px
     margin-bottom: 25px
   &-title
-    font-size: 21px
+    font-size: 20px
     line-height: 1.2
     margin-bottom: 20px
     font-weight: 700

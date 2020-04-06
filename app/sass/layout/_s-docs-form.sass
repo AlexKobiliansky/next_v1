@@ -1,0 +1,30 @@
+.s-docs-form
+  background-color: $text
+  color: #fff
+  background-image: url('../img/bg-docs-form.jpg')
+  +bg-cover
+  padding: 30px 0 10px
+  .section-title
+    color: $accent-green
+    width: 750px
+    text-align: left
+    margin-bottom: 30px
+
+.docs-form
+  display: flex
+  justify-content: space-between
+  align-items: flex-end
+  .short-label
+    display: inline-block
+    margin-right: 30px
+  .form-labels-wrap
+    width: 750px
+  .btn
+    width: 320px
+    margin-bottom: 28px
+  input, textarea
+    &::placeholder
+      color: rgba(#000, .4)
+  textarea
+    height: 85px
+
