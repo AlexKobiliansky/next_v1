@@ -1,0 +1,49 @@
+.s-service-form
+  background-image: url('../img/bg-service-form.jpg')
+  position: relative
+  box-shadow: 0 0 15px 10px rgba(#000, .05)
+  +bg-cover
+  text-align: left
+  border-top: 4px solid $accent-green
+  border-bottom: 4px solid $accent-green
+  padding: 27px 0 5px
+  overflow: hidden
+  label
+    margin-bottom: 15px
+  .section-subtitle
+    text-align: left
+    color: rgba(#000, .7)
+    margin-bottom: 35px
+  .section-title
+    text-align: left
+  .container
+    position: relative
+  .col-lg-8
+    position: inherit
+  &:before
+    content: '?'
+    position: absolute
+    font-size: 620px
+    font-weight: 700
+    color: rgba(#000, .1)
+    line-height: 1
+    top: -77px
+    left: 170px
+
+
+.service-form
+  .short-label
+    width: 250px
+  label
+    span
+      color: rgba(#000, .7)
+  input, textarea
+    &::placeholder
+      color: rgba(#000, .4)
+  textarea
+    height: 100px
+  .btn
+    position: absolute
+    right: 15px
+    bottom: 22px
+    width: 190px

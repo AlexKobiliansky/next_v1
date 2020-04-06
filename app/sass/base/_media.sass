@@ -13,6 +13,10 @@
     .s-page-meta
       padding-bottom: 275px
 
+  .s-service-form
+    &:before
+      left: 10px
+
 // ≥1200px
 +media-breakpoint-down(lg)
 
@@ -181,6 +185,16 @@
 
 // ≥992px
 +media-breakpoint-down(md)
+
+  .s-service-form
+    .section-title
+      font-size: 27px
+
+  .service-form
+    textarea
+      height: 70px
+    .btn
+      width: 150px
 
   .s-services
     background-size: auto 34%
@@ -482,6 +496,21 @@
 // ≥768px
 +media-breakpoint-down(sm)
 
+  .s-service-form
+    background-image: none
+    background-color: #f5f5f5
+    padding-bottom: 25px
+    &:before
+      left: auto
+      right: -10px
+
+
+  .service-form
+    .btn
+      position: relative
+      right: 0
+      bottom: 0
+
   .service-item
     &-title
       font-size: 16px
@@ -630,6 +659,14 @@
 
 // ≥480px
 +media-breakpoint-down(xs)
+
+  .s-service-form
+    .section-title
+      font-size: 24px
+      text-align: center
+      margin-bottom: 15px
+    .section-subtitle
+      text-align: center
 
   .s-services
     background-size: auto 775px
@@ -1106,6 +1143,17 @@
       font-size: 16px
 
 @media (max-width: 390px)
+
+  .s-service-form
+    padding: 50px 0 30px
+
+  .service-form
+    .short-label
+      width: 100%
+    textarea
+      height: 100px
+    .btn
+      width: 100%
 
   .service-item
     &-title
