@@ -221,6 +221,10 @@ $(document).ready(function(){
             $('.service-item-title').height('auto').matchHeight({
                 byRow: true
             });
+
+            $('.doc-item-title').height('auto').matchHeight({
+                byRow: true
+            });
         }
 
         $('.pop-item-title').height('auto').equalHeights();

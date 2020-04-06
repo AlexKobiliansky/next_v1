@@ -20,6 +20,14 @@
 // ≥1200px
 +media-breakpoint-down(lg)
 
+  .doc-item
+    &-img
+      height: 200px
+    &-title
+      font-size: 18px
+    &-desc
+      font-size: 16px
+
   .s-simple-form.light-simple-form .section-title
     font-size: 40px
 
@@ -198,6 +206,14 @@
 
 // ≥992px
 +media-breakpoint-down(md)
+
+  .doc-item
+    margin-bottom: 30px
+    &-img
+      height: 240px
+      margin-bottom: 20px
+    &-title
+      margin-bottom: 15px
 
   .s-service-form
     .section-title
@@ -509,6 +525,13 @@
 // ≥768px
 +media-breakpoint-down(sm)
 
+  .s-docs
+    padding-bottom: 20px
+
+  .doc-item
+    &-img
+      height: 200px
+
   .s-simple-form.light-simple-form .section-title
     font-size: 28px
 
@@ -682,6 +705,16 @@
 
 // ≥480px
 +media-breakpoint-down(xs)
+
+  .s-docs
+    .section-title
+      font-size: 24px
+
+  .doc-item
+    &-img
+      height: 240px
+    &-title
+      font-size: 21px
 
   .s-simple-form.light-simple-form .section-title
     font-size: 24px
@@ -1182,6 +1215,12 @@
       font-size: 16px
 
 @media (max-width: 390px)
+
+  .doc-item
+    &-img
+      height: 160px
+    &-title
+      font-size: 18px
 
   .step-item
     &:before
