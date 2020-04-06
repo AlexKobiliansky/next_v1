@@ -1,0 +1,32 @@
+.s-steps
+  .section-title
+    margin-bottom: 45px
+  counter-reset: step-item
+
+.steps-wrap
+  //margin-bottom: -30px
+
+.step-item
+  margin-bottom: 90px
+  counter-increment: step-item
+  position: relative
+  &:before
+    content: counter(step-item)
+    position: absolute
+    font-size: 134px
+    font-weight: 700
+    color: rgba($accent-green, .3)
+    line-height: 1
+    left: 40px
+    top: -21px
+
+  &-img
+    margin-bottom: 18px
+    font-size: 0
+  .svg
+    width: 90px
+    height: auto
+  &-title
+    font-size: 24px
+    font-weight: 700
+    line-height: 1.1
