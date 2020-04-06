@@ -61,25 +61,7 @@ $(document).ready(function(){
         $(this).children('.droppy__drop ').removeClass('droppy__drop--active')
     });
 
-    var $introSlider = $('.intro-slider').owlCarousel({
-        loop:true,
-        nav: false,
-        items: 1,
-        margin: 15,
-        dots: true,
-        animateOut: 'fadeOut',
-        // animateIn: 'fadeIn',
-        mouseDrag: false,
-        touchDrag: false,
-        autoplay: true,
-    });
 
-    var $info = $('#intro-current');
-
-    $introSlider.on('changed.owl.carousel', function (e) {
-        var currentItem = e.item.index - 1;
-        $info.text('0'+currentItem);
-    });
 
     $('.gallery-slider').on('initialized.owl.carousel', function (e) {
         var firstSlide = $('.cases-slider .owl-item.active');
@@ -173,6 +155,26 @@ $(document).ready(function(){
         autoplay: true,
         navText: ["", ""],
         autoHeight: true
+    });
+
+    var $introSlider = $('.intro-slider').owlCarousel({
+        loop:true,
+        nav: false,
+        items: 1,
+        margin: 15,
+        dots: true,
+        animateOut: 'fadeOut',
+        // animateIn: 'fadeIn',
+        mouseDrag: false,
+        touchDrag: false,
+        autoplay: true,
+    });
+
+    var $info = $('#intro-current');
+
+    $introSlider.on('changed.owl.carousel', function (e) {
+        var currentItem = e.item.index - 1;
+        $info.text('0'+currentItem);
     });
 
     $('img.svg').each(function(){
