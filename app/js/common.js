@@ -164,6 +164,17 @@ $(document).ready(function(){
         hideAnimationDuration: 0
     });
 
+    $('.services-slider').owlCarousel({
+        items: 1,
+        loop:true,
+        nav: true,
+        margin: 15,
+        dots: false,
+        autoplay: true,
+        navText: ["", ""],
+        autoHeight: true
+    });
+
     $('img.svg').each(function(){
         var $img = jQuery(this);
         var imgID = $img.attr('id');
@@ -206,9 +217,14 @@ $(document).ready(function(){
             $('.price-item-include').height('auto').equalHeights();
             $('.gal-slide-title').height('auto').equalHeights();
             $('.gal-slide-desc').height('auto').equalHeights();
+
+            $('.service-item-title').height('auto').matchHeight({
+                byRow: true
+            });
         }
 
         $('.pop-item-title').height('auto').equalHeights();
+
     }
 
     $(window).resize(function() {

@@ -3,8 +3,41 @@
 
 /*==========  Desktop First  ==========*/
 
+@media (max-width: 1700px)
+  .s-services
+    .s-page-meta
+      padding-bottom: 325px
+
+@media (max-width: 1400px)
+  .s-services
+    .s-page-meta
+      padding-bottom: 275px
+
 // ≥1200px
 +media-breakpoint-down(lg)
+
+  .service-item
+    &-img
+      height: 200px
+    &-title
+      font-size: 18px
+    &-order
+      width: auto
+      padding: 17px 25px
+    &-price
+      font-size: 20px
+    &-time
+      padding-left: 22px
+      &:before
+        width: 16px
+        height: 16px
+        top: calc(50% - 8px)
+
+
+  .s-services
+    background-size: auto 50%
+    .s-page-meta
+      padding-bottom: 200px
 
   .portfolio-item
     margin-bottom: 50px
@@ -148,6 +181,9 @@
 
 // ≥992px
 +media-breakpoint-down(md)
+
+  .s-services
+    background-size: auto 34%
 
   .portfolio-wrap
     margin-top: 50px
@@ -446,6 +482,14 @@
 // ≥768px
 +media-breakpoint-down(sm)
 
+  .service-item
+    &-title
+      font-size: 16px
+    &-order
+      font-size: 16px
+      padding: 16px
+
+
   .portfolio-item
     width: 100%
 
@@ -586,6 +630,44 @@
 
 // ≥480px
 +media-breakpoint-down(xs)
+
+  .s-services
+    background-size: auto 775px
+
+  .services-slider
+    box-shadow: 0 0 10px 5px rgba(#000, .1)
+    .owl-nav
+      position: absolute
+      z-index: 2
+      top: calc(50% - 9.5px)
+      left: 0
+      width: 100%
+      button.owl-prev, button.owl-next
+        width: 19px
+        height: 19px
+        background-image: url('../img/icons/slider-arrow.svg')
+        +bg-cover
+        cursor: pointer
+        +mt(.3s)
+        position: absolute
+      button.owl-prev
+        left: -30px
+        transform: rotate(180deg)
+      button.owl-next
+        right: -30px
+
+  .service-item
+    box-shadow: none
+    margin-bottom: 0
+    &-title
+      font-size: 18px
+    &-order
+      width: 120px
+    &-img
+      height: 180px
+
+  .services-mobile-wrap
+    padding: 0 50px
 
   .s-portfolio
     padding-bottom: 50px
@@ -1024,6 +1106,13 @@
       font-size: 16px
 
 @media (max-width: 390px)
+
+  .service-item
+    &-title
+      font-size: 16px
+
+  .services-mobile-wrap
+    padding: 0 20px
 
   .portfolio-slide
     height: 240px
