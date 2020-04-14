@@ -1,5 +1,27 @@
 $(document).ready(function(){
 
+
+    // Check if there's an anchor in the url
+    if (window.location.hash){
+        var id = window.location.hash.substring(1);
+        var packageItem = $('#'+id)
+
+        if(id.indexOf('package') + 1) {
+            console.log(id);
+
+            /** FAQ custom */
+                packageItem.find('.package-item-link').text(function(i, text){
+                    return text === "подробнее" ? "свернуть" : "подробнее";
+                });
+
+                packageItem.addClass('active').find('.package-item-body').slideToggle(600);
+
+
+            /** end FAQ custom */
+        }
+    }
+
+
     /**
      * mobile-mnu customization
      */
@@ -152,7 +174,7 @@ $(document).ready(function(){
         nav: true,
         margin: 15,
         dots: false,
-        autoplay: true,
+        autoplay: false,
         navText: ["", ""],
         autoHeight: true
     });
@@ -255,6 +277,7 @@ $(document).ready(function(){
         parent.siblings('.package-item').each(function(){
             $(this).removeClass('active');
             $(this).find('.package-item-body').slideUp(600);
+            $(this).find('.package-item-link').text('подробнее');
         });
     });
     /** end FAQ custom */
@@ -263,7 +286,7 @@ $(document).ready(function(){
 
     /** START FORMS */
     $(function() {
-        $("a[href='#service-popup-form']").magnificPopup({
+        $(".open-popup").magnificPopup({
             type: "inline",
             fixedContentPos: true,
             fixedBgPos: false,
@@ -298,7 +321,7 @@ $(document).ready(function(){
 
         $.ajax({
             type: "POST",
-            url: "mail.php", //Change
+            url: "/mail.php", //Change
             data: th.serialize()
         }).done(function() {
             setTimeout(function() {

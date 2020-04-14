@@ -78,6 +78,7 @@
     position: relative
     ul
       position: absolute
+      z-index: 3
       background-color: #fff
       width: 300px
       box-shadow: 0 10px 10px 5px rgba(#000, .1)
@@ -144,23 +145,23 @@
 .mm-listitem, .mm-listitem .mm-btn_next, .mm-listitem .mm-btn_next:before, .mm-listitem:after, .mm-listview
   border-color: rgba(#fff, .3)
 
-#menu-glavnoe-menyu
-  .mm-listitem
-    &:last-child
-      a
-        background-color: $accent-red
-        margin-left: 20px
-      &:after
-        display: none
-    &:nth-last-child(2)
-      &:after
-        display: none
+//#menu-glavnoe-menyu
+//  .mm-listitem
+//    &:last-child
+//      a
+//        background-color: $accent-red
+//        margin-left: 20px
+//      &:after
+//        display: none
+//    &:nth-last-child(2)
+//      &:after
+//        display: none
 
 .mm-listitem
   a
     padding-top: 14px
     padding-bottom: 12px
-#mm-0
+#menu-glavnoe-menyu, #menu-mobilnoe-menyu
   li.mm-listitem
     &:nth-last-child(2)
       &:after
